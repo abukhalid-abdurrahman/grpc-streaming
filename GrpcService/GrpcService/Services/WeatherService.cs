@@ -7,7 +7,11 @@ namespace GrpcService.Services
     {
         public override Task<WeatherResponse> GetCurrentWeather(WeatherRequest request, ServerCallContext context)
         {
-            return Task.FromResult(new WeatherResponse() {});
+            return Task.FromResult(new WeatherResponse()
+            {
+                FeelsLike = 2.60,
+                Temp = 45.5
+            });
         }
     }
 }
