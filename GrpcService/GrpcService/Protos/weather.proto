@@ -1,0 +1,24 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcService.Services";
+
+package weather;
+
+service Weather {
+    rpc GetCurrentWeather(WeatherRequest) returns (WeatherResponse);
+}
+
+message WeatherRequest {
+    string city = 1;
+    enum Units {
+        Standard = 0;
+        Metric = 1;
+        Imperial = 2;
+    };
+    Units units = 2;
+};
+
+message WeatherResponse {
+    double temp = 1;
+    double feels_like = 2;
+};

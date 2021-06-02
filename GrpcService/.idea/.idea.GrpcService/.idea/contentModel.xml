@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\admin\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\admin\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GrpcService.-10402024.00" t="ExcludeRecursive" />
+    <e p="E:\Faridun's Projects\Faridun's\Back-End\ASP\gRPC Streaming\GrpcService" t="IncludeFlat">
+      <e p="GrpcService" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="GrpcService.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net5.0" t="Include">
+              <e p="GrpcService.AssemblyInfo.cs" t="Include" />
+              <e p="Protos" t="Include">
+                <e p="Greet.cs" t="Include" />
+                <e p="GreetGrpc.cs" t="Include" />
+                <e p="Weather.cs" t="Include" />
+                <e p="WeatherGrpc.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Protos" t="Include">
+          <e p="greet.proto" t="Include" />
+          <e p="weather.proto" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="GreeterService.cs" t="Include" />
+          <e p="WeatherService.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="GrpcService.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
