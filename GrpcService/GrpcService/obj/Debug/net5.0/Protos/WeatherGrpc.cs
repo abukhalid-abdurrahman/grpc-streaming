@@ -44,6 +44,7 @@ namespace GrpcService.Services {
 
     static readonly grpc::Marshaller<global::GrpcService.Services.WeatherRequest> __Marshaller_weather_WeatherRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GrpcService.Services.WeatherRequest.Parser));
     static readonly grpc::Marshaller<global::GrpcService.Services.WeatherResponse> __Marshaller_weather_WeatherResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GrpcService.Services.WeatherResponse.Parser));
+    static readonly grpc::Marshaller<global::GrpcService.Services.MultiWeatherResponse> __Marshaller_weather_MultiWeatherResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GrpcService.Services.MultiWeatherResponse.Parser));
 
     static readonly grpc::Method<global::GrpcService.Services.WeatherRequest, global::GrpcService.Services.WeatherResponse> __Method_GetCurrentWeather = new grpc::Method<global::GrpcService.Services.WeatherRequest, global::GrpcService.Services.WeatherResponse>(
         grpc::MethodType.Unary,
@@ -51,6 +52,20 @@ namespace GrpcService.Services {
         "GetCurrentWeather",
         __Marshaller_weather_WeatherRequest,
         __Marshaller_weather_WeatherResponse);
+
+    static readonly grpc::Method<global::GrpcService.Services.WeatherRequest, global::GrpcService.Services.WeatherResponse> __Method_GetCurrentWeatherStream = new grpc::Method<global::GrpcService.Services.WeatherRequest, global::GrpcService.Services.WeatherResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetCurrentWeatherStream",
+        __Marshaller_weather_WeatherRequest,
+        __Marshaller_weather_WeatherResponse);
+
+    static readonly grpc::Method<global::GrpcService.Services.WeatherRequest, global::GrpcService.Services.MultiWeatherResponse> __Method_GetMultiCurrentWeatherStream = new grpc::Method<global::GrpcService.Services.WeatherRequest, global::GrpcService.Services.MultiWeatherResponse>(
+        grpc::MethodType.ClientStreaming,
+        __ServiceName,
+        "GetMultiCurrentWeatherStream",
+        __Marshaller_weather_WeatherRequest,
+        __Marshaller_weather_MultiWeatherResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -67,6 +82,16 @@ namespace GrpcService.Services {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task GetCurrentWeatherStream(global::GrpcService.Services.WeatherRequest request, grpc::IServerStreamWriter<global::GrpcService.Services.WeatherResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::GrpcService.Services.MultiWeatherResponse> GetMultiCurrentWeatherStream(grpc::IAsyncStreamReader<global::GrpcService.Services.WeatherRequest> requestStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -74,7 +99,9 @@ namespace GrpcService.Services {
     public static grpc::ServerServiceDefinition BindService(WeatherBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetCurrentWeather, serviceImpl.GetCurrentWeather).Build();
+          .AddMethod(__Method_GetCurrentWeather, serviceImpl.GetCurrentWeather)
+          .AddMethod(__Method_GetCurrentWeatherStream, serviceImpl.GetCurrentWeatherStream)
+          .AddMethod(__Method_GetMultiCurrentWeatherStream, serviceImpl.GetMultiCurrentWeatherStream).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -84,6 +111,8 @@ namespace GrpcService.Services {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, WeatherBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetCurrentWeather, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.Services.WeatherRequest, global::GrpcService.Services.WeatherResponse>(serviceImpl.GetCurrentWeather));
+      serviceBinder.AddMethod(__Method_GetCurrentWeatherStream, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::GrpcService.Services.WeatherRequest, global::GrpcService.Services.WeatherResponse>(serviceImpl.GetCurrentWeatherStream));
+      serviceBinder.AddMethod(__Method_GetMultiCurrentWeatherStream, serviceImpl == null ? null : new grpc::ClientStreamingServerMethod<global::GrpcService.Services.WeatherRequest, global::GrpcService.Services.MultiWeatherResponse>(serviceImpl.GetMultiCurrentWeatherStream));
     }
 
   }
