@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using Microsoft.Extensions.Logging;
 
@@ -18,7 +20,21 @@ namespace GrpcService.Services
             IServerStreamWriter<ResponseMessage> responseStream, 
             ServerCallContext context)
         {
-            
+            while (await requestStream.MoveNext() && !context.CancellationToken.IsCancellationRequested)
+            {
+                var message = requestStream.Current;
+                _logger.LogInformation($"MESSAGE FROM CLIENT: {message.Text}");
+            }
+
+            while (!context.CancellationToken.IsCancellationRequested)
+            {
+                await responseStream.WriteAsync(new ResponseMessage()
+                {
+                    Text = "OK, I GOT YOU :)",
+                    Timestamp = Timestamp.FromDateTime(DateTime.UtcNow)
+                });
+                await Task.Delay(1000);
+            }
         }
     }
 }

@@ -23,7 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72f58b79-9de4-4f12-a8ee-8a19b4a829b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GrpcService/Protos/chat.proto" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/Protos/chat.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GrpcService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrpcService/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService/Services/ChatService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/Services/ChatService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/GrpcService/Protos/greet.proto" />
-        <option value="$PROJECT_DIR$/GrpcService/GrpcService.csproj" />
         <option value="$PROJECT_DIR$/GrpcService/Services/GreeterService.cs" />
         <option value="$PROJECT_DIR$/GrpcService/Services/We.cs" />
         <option value="$PROJECT_DIR$/GrpcService/Services/WetherService.cs" />
@@ -45,6 +45,8 @@
         <option value="$PROJECT_DIR$/GrpcService/Protos/weather.proto" />
         <option value="$PROJECT_DIR$/GrpcService/Services/WeatherService.cs" />
         <option value="$PROJECT_DIR$/GrpcService/Protos/chat.proto" />
+        <option value="$PROJECT_DIR$/GrpcService/GrpcService.csproj" />
+        <option value="$PROJECT_DIR$/GrpcService/Services/ChatService.cs" />
       </list>
     </option>
   </component>
@@ -90,7 +92,7 @@
       <workItem from="1622615781637" duration="3994000" />
       <workItem from="1622694272256" duration="2308000" />
       <workItem from="1622780593948" duration="1737000" />
-      <workItem from="1622816533802" duration="330000" />
+      <workItem from="1622816533802" duration="678000" />
     </task>
     <servers />
   </component>
@@ -131,5 +133,9 @@
       <screen x="-1920" y="0" width="1603" height="873" />
     </state>
     <state width="1559" height="226" key="GridCell.Tab.0.right/0.0.1603.873/-1920.0.1603.873@-1920.0.1603.873" timestamp="1622624955080" />
+    <state x="-1463" y="198" key="run.anything.popup" timestamp="1622816757112">
+      <screen x="-1920" y="0" width="1603" height="873" />
+    </state>
+    <state x="-1463" y="198" key="run.anything.popup/0.0.1603.873/-1920.0.1603.873@-1920.0.1603.873" timestamp="1622816757112" />
   </component>
 </project>
