@@ -6,14 +6,16 @@ import "google/protobuf/timestamp.proto";
 
 package chat;
 
-service chat {
+service Chat {
     rpc SendMessage(stream RequestMessage) returns (stream ResponseMessage);
 }
 
 message RequestMessage {
-    
+    string text = 1;
 }
 
 message ResponseMessage {
+    string text = 1;
+    google.protobuf.Timestamp timestamp = 2;
 
 }
