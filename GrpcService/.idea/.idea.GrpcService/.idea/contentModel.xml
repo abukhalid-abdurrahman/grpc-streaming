@@ -27,6 +27,7 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Protos" t="Include">
+          <e p="chat.proto" t="Include" />
           <e p="greet.proto" t="Include" />
           <e p="weather.proto" t="Include" />
         </e>
