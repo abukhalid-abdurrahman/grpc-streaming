@@ -1,3 +1,4 @@
 obj\Debug\net5.0\Protos/Weather.cs \
 obj\Debug\net5.0\Protos/WeatherGrpc.cs: C:/Users/admin/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/timestamp.proto\
+ C:/Users/admin/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/empty.proto\
  Protos/weather.proto

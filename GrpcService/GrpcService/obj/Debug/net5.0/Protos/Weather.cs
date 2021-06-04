@@ -25,24 +25,27 @@ namespace GrpcService.Services {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRQcm90b3Mvd2VhdGhlci5wcm90bxIHd2VhdGhlchofZ29vZ2xlL3Byb3Rv",
-            "YnVmL3RpbWVzdGFtcC5wcm90byI9Cg5XZWF0aGVyUmVxdWVzdBIMCgRjaXR5",
-            "GAEgASgJEh0KBXVuaXRzGAIgASgOMg4ud2VhdGhlci5Vbml0cyKPAQoPV2Vh",
-            "dGhlclJlc3BvbnNlEgwKBHRlbXAYASABKAESEgoKZmVlbHNfbGlrZRgCIAEo",
-            "ARItCgl0aW1lc3RhbXAYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
-            "YW1wEgwKBGNpdHkYBCABKAkSHQoFdW5pdHMYBSABKA4yDi53ZWF0aGVyLlVu",
-            "aXRzIkEKFE11bHRpV2VhdGhlclJlc3BvbnNlEikKB3dlYXRoZXIYASADKAsy",
-            "GC53ZWF0aGVyLldlYXRoZXJSZXNwb25zZSovCgVVbml0cxIMCghTdGFuZGFy",
-            "ZBAAEgoKBk1ldHJpYxABEgwKCEltcGVyaWFsEAIy+wEKB1dlYXRoZXISRgoR",
-            "R2V0Q3VycmVudFdlYXRoZXISFy53ZWF0aGVyLldlYXRoZXJSZXF1ZXN0Ghgu",
-            "d2VhdGhlci5XZWF0aGVyUmVzcG9uc2USTgoXR2V0Q3VycmVudFdlYXRoZXJT",
-            "dHJlYW0SFy53ZWF0aGVyLldlYXRoZXJSZXF1ZXN0Ghgud2VhdGhlci5XZWF0",
-            "aGVyUmVzcG9uc2UwARJYChxHZXRNdWx0aUN1cnJlbnRXZWF0aGVyU3RyZWFt",
-            "Ehcud2VhdGhlci5XZWF0aGVyUmVxdWVzdBodLndlYXRoZXIuTXVsdGlXZWF0",
-            "aGVyUmVzcG9uc2UoAUIXqgIUR3JwY1NlcnZpY2UuU2VydmljZXNiBnByb3Rv",
-            "Mw=="));
+            "YnVmL3RpbWVzdGFtcC5wcm90bxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnBy",
+            "b3RvIh8KDFByaW50UmVxdWVzdBIPCgdtZXNzYWdlGAEgASgJIj0KDldlYXRo",
+            "ZXJSZXF1ZXN0EgwKBGNpdHkYASABKAkSHQoFdW5pdHMYAiABKA4yDi53ZWF0",
+            "aGVyLlVuaXRzIo8BCg9XZWF0aGVyUmVzcG9uc2USDAoEdGVtcBgBIAEoARIS",
+            "CgpmZWVsc19saWtlGAIgASgBEi0KCXRpbWVzdGFtcBgDIAEoCzIaLmdvb2ds",
+            "ZS5wcm90b2J1Zi5UaW1lc3RhbXASDAoEY2l0eRgEIAEoCRIdCgV1bml0cxgF",
+            "IAEoDjIOLndlYXRoZXIuVW5pdHMiQQoUTXVsdGlXZWF0aGVyUmVzcG9uc2US",
+            "KQoHd2VhdGhlchgBIAMoCzIYLndlYXRoZXIuV2VhdGhlclJlc3BvbnNlKi8K",
+            "BVVuaXRzEgwKCFN0YW5kYXJkEAASCgoGTWV0cmljEAESDAoISW1wZXJpYWwQ",
+            "AjK7AgoHV2VhdGhlchJGChFHZXRDdXJyZW50V2VhdGhlchIXLndlYXRoZXIu",
+            "V2VhdGhlclJlcXVlc3QaGC53ZWF0aGVyLldlYXRoZXJSZXNwb25zZRJOChdH",
+            "ZXRDdXJyZW50V2VhdGhlclN0cmVhbRIXLndlYXRoZXIuV2VhdGhlclJlcXVl",
+            "c3QaGC53ZWF0aGVyLldlYXRoZXJSZXNwb25zZTABElgKHEdldE11bHRpQ3Vy",
+            "cmVudFdlYXRoZXJTdHJlYW0SFy53ZWF0aGVyLldlYXRoZXJSZXF1ZXN0Gh0u",
+            "d2VhdGhlci5NdWx0aVdlYXRoZXJSZXNwb25zZSgBEj4KC1ByaW50U3RyZWFt",
+            "EhUud2VhdGhlci5QcmludFJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1w",
+            "dHkoAUIXqgIUR3JwY1NlcnZpY2UuU2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GrpcService.Services.Units), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.Services.PrintRequest), global::GrpcService.Services.PrintRequest.Parser, new[]{ "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.Services.WeatherRequest), global::GrpcService.Services.WeatherRequest.Parser, new[]{ "City", "Units" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.Services.WeatherResponse), global::GrpcService.Services.WeatherResponse.Parser, new[]{ "Temp", "FeelsLike", "Timestamp", "City", "Units" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.Services.MultiWeatherResponse), global::GrpcService.Services.MultiWeatherResponse.Parser, new[]{ "Weather" }, null, null, null, null)
@@ -61,6 +64,178 @@ namespace GrpcService.Services {
   #endregion
 
   #region Messages
+  public sealed partial class PrintRequest : pb::IMessage<PrintRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PrintRequest> _parser = new pb::MessageParser<PrintRequest>(() => new PrintRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PrintRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GrpcService.Services.WeatherReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PrintRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PrintRequest(PrintRequest other) : this() {
+      message_ = other.message_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PrintRequest Clone() {
+      return new PrintRequest(this);
+    }
+
+    /// <summary>Field number for the "message" field.</summary>
+    public const int MessageFieldNumber = 1;
+    private string message_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Message {
+      get { return message_; }
+      set {
+        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PrintRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PrintRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Message != other.Message) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Message.Length != 0) hash ^= Message.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Message.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Message);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Message.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Message);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Message.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PrintRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Message.Length != 0) {
+        Message = other.Message;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Message = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Message = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class WeatherRequest : pb::IMessage<WeatherRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -73,7 +248,7 @@ namespace GrpcService.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcService.Services.WeatherReflection.Descriptor.MessageTypes[0]; }
+      get { return global::GrpcService.Services.WeatherReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -281,7 +456,7 @@ namespace GrpcService.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcService.Services.WeatherReflection.Descriptor.MessageTypes[1]; }
+      get { return global::GrpcService.Services.WeatherReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -606,7 +781,7 @@ namespace GrpcService.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcService.Services.WeatherReflection.Descriptor.MessageTypes[2]; }
+      get { return global::GrpcService.Services.WeatherReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

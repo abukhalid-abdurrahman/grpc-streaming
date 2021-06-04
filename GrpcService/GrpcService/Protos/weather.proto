@@ -3,6 +3,7 @@
 option csharp_namespace = "GrpcService.Services";
 
 import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
 
 package weather;
 
@@ -10,6 +11,11 @@ service Weather {
     rpc GetCurrentWeather(WeatherRequest) returns (WeatherResponse);
     rpc GetCurrentWeatherStream(WeatherRequest) returns (stream WeatherResponse);
     rpc GetMultiCurrentWeatherStream (stream WeatherRequest) returns (MultiWeatherResponse);
+    rpc PrintStream (stream PrintRequest) returns (google.protobuf.Empty);
+}
+
+message PrintRequest {
+    string message = 1;
 }
 
 enum Units {

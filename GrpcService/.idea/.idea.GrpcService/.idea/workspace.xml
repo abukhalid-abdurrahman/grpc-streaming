@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72f58b79-9de4-4f12-a8ee-8a19b4a829b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GrpcService/Services/WeatherService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/Services/WeatherService.cs" afterDir="false" />
-    </list>
+    <list default="true" id="72f58b79-9de4-4f12-a8ee-8a19b4a829b1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +86,7 @@
       <updated>1622615773625</updated>
       <workItem from="1622615781637" duration="3994000" />
       <workItem from="1622694272256" duration="2308000" />
-      <workItem from="1622780593948" duration="1022000" />
+      <workItem from="1622780593948" duration="1343000" />
     </task>
     <servers />
   </component>
