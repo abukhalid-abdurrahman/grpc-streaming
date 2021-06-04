@@ -23,19 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72f58b79-9de4-4f12-a8ee-8a19b4a829b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GrpcService/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GrpcService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrpcService/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService/Protos/weather.proto" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/Protos/weather.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcService/Services/WeatherService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/Services/WeatherService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService/bin/Debug/net5.0/GrpcService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/bin/Debug/net5.0/GrpcService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService/bin/Debug/net5.0/GrpcService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/bin/Debug/net5.0/GrpcService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService/bin/Debug/net5.0/ref/GrpcService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/bin/Debug/net5.0/ref/GrpcService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/12fbc7ffe642ca7e_weather.protodep" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/12fbc7ffe642ca7e_weather.protodep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/GrpcService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/GrpcService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/GrpcService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/GrpcService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/Protos/Weather.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/Protos/Weather.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/Protos/WeatherGrpc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/Protos/WeatherGrpc.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/ref/GrpcService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService/obj/Debug/net5.0/ref/GrpcService.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +42,8 @@
         <option value="$PROJECT_DIR$/GrpcService/Services/We.cs" />
         <option value="$PROJECT_DIR$/GrpcService/Services/WetherService.cs" />
         <option value="$PROJECT_DIR$/GrpcService/Startup.cs" />
-        <option value="$PROJECT_DIR$/GrpcService/Services/WeatherService.cs" />
         <option value="$PROJECT_DIR$/GrpcService/Protos/weather.proto" />
+        <option value="$PROJECT_DIR$/GrpcService/Services/WeatherService.cs" />
       </list>
     </option>
   </component>
@@ -70,6 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -99,7 +88,7 @@
       <updated>1622615773625</updated>
       <workItem from="1622615781637" duration="3994000" />
       <workItem from="1622694272256" duration="2308000" />
-      <workItem from="1622780593948" duration="713000" />
+      <workItem from="1622780593948" duration="1022000" />
     </task>
     <servers />
   </component>

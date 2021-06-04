@@ -13,7 +13,9 @@ namespace GrpcService.Services
             {
                 FeelsLike = 2.60,
                 Temp = 45.5,
-                Timestamp = Timestamp.FromDateTime(DateTime.UtcNow)
+                Timestamp = Timestamp.FromDateTime(DateTime.UtcNow),
+                City = "Tajikistan",
+                Units = Units.Imperial
             });
         }
         
@@ -28,8 +30,32 @@ namespace GrpcService.Services
             {
                 FeelsLike = 2.60,
                 Temp = 45.5,
-                Timestamp = Timestamp.FromDateTime(DateTime.UtcNow)
+                Timestamp = Timestamp.FromDateTime(DateTime.UtcNow),
+                City = "Tajikistan",
+                Units = Units.Imperial
             });
+        }
+
+        public override async Task<MultiWeatherResponse> GetMultiCurrentWeatherStream(
+            IAsyncStreamReader<WeatherRequest> requestStream, 
+            ServerCallContext context)
+        {
+            var response = new MultiWeatherResponse()
+            {
+                Weather = { }
+            };
+            await foreach (var request in requestStream.ReadAllAsync())
+            {
+                response.Weather.Add(new WeatherResponse()
+                {
+                    FeelsLike = 2.60,
+                    Temp = 45.5,
+                    Timestamp = Timestamp.FromDateTime(DateTime.UtcNow),
+                    City = "Tajikistan",
+                    Units = Units.Imperial
+                });   
+            }
+            return response;
         }
     }
 }
